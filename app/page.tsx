@@ -16,17 +16,10 @@ export default async function Index() {
         <div className="flex flex-col items-center mb-4 lg:mb-12">
           <h1 className="sr-only">Supabase and Next.js Starter Template</h1>
           <p className="text-3xl lg:text-4xl !leading-tight mx-auto max-w-xl text-center my-12">
-            Chat with your files using <strong>Supabase</strong> and{' '}
-            <strong>Next.js</strong>
+            Chat with our <strong>Soneri Bot</strong>
           </p>
           {user ? (
             <div className="flex flex-row gap-2">
-              <Link
-                href="/files"
-                className="bg-foreground py-3 px-6 rounded-lg font-mono text-sm text-background"
-              >
-                Upload
-              </Link>
               <Link
                 href="/chat"
                 className="bg-foreground py-3 px-6 rounded-lg font-mono text-sm text-background"
