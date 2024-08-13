@@ -99,7 +99,7 @@ begin
 
   select
     net.http_post(
-      url := supabase_url() || '/functions/v1/process',
+      url := 'https://smzouqrfzcemyrjydxum.supabase.co/functions/v1/process',
       headers := jsonb_build_object(
         'Content-Type', 'application/json',
         'Authorization', current_setting('request.headers')::json->>'authorization'

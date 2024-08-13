@@ -34,7 +34,7 @@ begin
   for i in 0 .. (batch_count-1) loop
   perform
     net.http_post(
-      url := supabase_url() || '/functions/v1/embed',
+      url := 'https://smzouqrfzcemyrjydxum.supabase.co/functions/v1/embed',
       headers := jsonb_build_object(
         'Content-Type', 'application/json',
         'Authorization', current_setting('request.headers')::json->>'authorization'
